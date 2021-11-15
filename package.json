@@ -1,0 +1,26 @@
+{
+  "name": "iac_frontend_node",
+  "version": "1.0.0",
+  "description": "Aplikasi Web Proyek Akhir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayustira/IacFrontEnd.git"
+  },
+  "author": "Muhammad Bayustira Hermadana Putra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayustira/IacFrontEnd/issues"
+  },
+  "homepage": "https://github.com/bayustira/IacFrontEnd#readme",
+  "dependencies": {
+    "@aws-sdk/client-cloudformation": "^3.41.0",
+    "@aws-sdk/client-cognito-identity": "^3.41.0",
+    "@aws-sdk/credential-provider-ini": "^3.41.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1"
+  }
+}

@@ -6,11 +6,11 @@
   <title>Proyek Akhir | Front End</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css" />
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/dist/css/adminlte.min.css" />
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -52,7 +52,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
+    <a href="/home" class="brand-link">
       <h2 class="brand-text font-weight-light">Simulasi IaC</h2>
     </a>
 
@@ -64,28 +64,28 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="home.html" class="nav-link">
+            <a href="/home" class="nav-link">
               <p>
                 Home
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="upload_script.html" class="nav-link">
+            <a href="/upload_script.html" class="nav-link">
               <p>
                 Upload Script
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="result.html" class="nav-link">
+            <a href="/result" class="nav-link">
               <p>
                 Result
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
+            <a href="/" class="nav-link">
               <p>
                 Sign Out
               </p>
@@ -129,19 +129,26 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form action="#">
+          <form action="/upload_script" method="post" enctype="multipart/form-data">
             <div class="card-body">
               <div class="form-group">
+                <label for="exampleInputFile">Nama Stack</label>
+                <input name="namaStack" class="form-control" type="text" placeholder="Masukkan nama stack untuk template yang akan diunggah">
+                <br>
                 <label for="exampleInputFile">Format script JSON / YAML</label>
-                <div class="input-group">
+                <input type="file" class="custom-file" name="template" accept=".json, .yml">
+                <!-- <div class="mb-3">
+                  
+                </div> -->
+                <!-- <div class="input-group">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="exampleInputFile">
                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                    <input type="file" class="custom-file" id="exampleInputFile">
                   </div>
-                  <div class="input-group-append">
+                  <!--<div class="input-group-append">
                     <span class="input-group-text">Upload</span>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- /.card-body -->
@@ -176,12 +183,16 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="/dist/js/demo.js"></script>
+<!-- AWS SDK-->
+<!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1022.0.min.js"></script> -->
+
+<!-- <script src="/libs/createStack.js"></script> -->
 </body>
 </html>
